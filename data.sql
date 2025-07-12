@@ -2,10 +2,10 @@ USE [master]
 GO
 
 
-CREATE DATABASE [Assignment] 
+CREATE DATABASE Assignment 
 GO
 
-USE [Assignment]
+USE Assignment
 GO
 CREATE TABLE [User] (
     user_id INT PRIMARY KEY IDENTITY(1,1),
@@ -13,9 +13,14 @@ CREATE TABLE [User] (
     email NVARCHAR(100) UNIQUE NOT NULL,
     password NVARCHAR(255) NOT NULL,
     address NVARCHAR(MAX),
+    
     phone_number NVARCHAR(20),
+
     created_at DATETIME DEFAULT GETDATE()
 );
+ALTER TABLE [User]
+ADD role VARCHAR(20) NOT NULL CHECK (role IN ('Admin', 'User'))
+
 CREATE TABLE [Categories] (
     category_id INT PRIMARY KEY IDENTITY(1,1),
     category_name NVARCHAR(100) NOT NULL,

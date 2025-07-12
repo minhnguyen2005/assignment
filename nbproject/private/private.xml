@@ -3,7 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/FPT/PRJ301/assignment/src/java/MainController.java</file>
+            <file>file:/D:/FPT/PRJ301/assignment/src/java/controller/MainController.java</file>
+            <file>file:/D:/FPT/PRJ301/assignment/web/assets/main.css</file>
             <file>file:/D:/FPT/PRJ301/assignment/web/home.jsp</file>
             <file>file:/D:/FPT/PRJ301/assignment/web/login.jsp</file>
         </group>
